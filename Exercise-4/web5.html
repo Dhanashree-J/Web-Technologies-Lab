@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+     <head>
+        <title>Javascript Validation</title>
+        <style>
+            td{
+                padding:7px;
+                margin:5px;
+            }
+        </style>
+        <script>
+            function time()
+            {
+                const d=new Date();
+                const h=d.getHours();
+                const m=d.getMinutes();
+                const s=d.getSeconds();
+                document.getElementById("timetext").innerHTML= h + ":" + m + ":" + s;
+                setInterval(time,1000);
+            }
+            function validate()
+            {
+                var mail=document.getElementById("email").value;
+                if(mail==="")
+                {
+                    alert("Mail id required");
+                    return false;
+                }
+                var atindex=mail.indexOf("@");
+                var dotindex=mail.indexOf(".",atindex);
+                if(atindex < 1 || dotindex < 2 || dotindex < atindex+2)
+                {
+                    alert("Enter valid email address");
+                    return false;
+                }
+                var username = document.getElementById("username").value;
+                if (username === "") {
+                    alert("Username must not be empty");
+                    return false;
+                }
+                var password = document.getElementById("password").value;
+                if (password === "") {
+                    alert("Enter password");
+                    return false;
+                }
+                alert("Submitted Successfully");
+                return true;
+            }
+        </script>
+     </head>
+     <body id="body" onclick="document.getElementById('body').style='background-color:yellow;'">
+        <center>
+            <h1 style="margin:5px;margin-bottom:30px;">Display In Time</h1>
+            <div id="timetext" style="width:100px;;height:20px;border:1px solid black;margin:10px;display:inline-block;vertical-align: middle;"></div>
+            <button type="button" onclick="time()">See Time</button>
+            <form name="myform" style="margin-top:40px;margin-bottom:40px;" onsubmit="return validate()">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Email:</td>
+                            <td><input type="text" name="email" id="email"></td>
+                        </tr>
+                        <tr>
+                            <td>Username:</td>
+                            <td><input type="text" name="username" id="username"></td>
+                        </tr>
+                        <tr>
+                            <td>Password:</td>
+                            <td><input type="password" name="password" id="password"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <input type="submit" value="Submit">
+            </form>
+            <p id="para" style="margin-top:40px;">Hover mouse inside div</p>
+            <div style="margin:5px;padding:10px;" onmousemove="document.getElementById('para').innerHTML='Mouse Over me'" onmouseout="document.getElementById('para').innerHTML='Mouse out'">Inside Division</div>
+            <div style="margin-top:40px;">
+                <p id="para1" style="display:none;margin-bottom:5px;">Some text</p>
+                <img src="https://gratisography.com/wp-content/uploads/2024/01/gratisography-cyber-kitty-800x525.jpg" alt="cat-image" width="20%" height="20%" onmouseover="document.getElementById('para1').style.display='block'" onmouseout="document.getElementById('para1').style.display='none'">
+            </div>
+        </center>
+     </body>
+</html>
+
