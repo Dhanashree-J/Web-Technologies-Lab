@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dream Journey To Sikkim</title>
+        <style>
+            td{
+                padding:7px;
+                margin:5px;
+            }
+            h1{
+                margin:15px;
+                text-shadow:2px 2px 2px gray;
+                text-decoration:underline;
+                font-family:'Times New Roman';
+            }
+            label{
+                font-weight:bold;
+            }
+        </style>
+        <script src="validate.js"></script>
+    </head>
+    <body>
+        <center>
+            <h1>Your Dream Journey to Sikkim</h1>
+            <form name="travelform" onsubmit="return validateForm()" style="border:1px solid black;margin:0 32%;background-image: url('https://www.esikkimtourism.in/wp-content/uploads/2019/04/3rd-image.jpg'); background-color: rgba(255, 255, 255, 0.7);
+    background-blend-mode: overlay; ">
+                <table>
+                    <tr>
+                        <td><label for="name">Name:</label></td>
+                        <td><input type="text" id="name" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="age">Age:</label></td>
+                        <td><input type="number" id="age" name="age" min="1" max="100"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender">Gender:</label></td>
+                        <td><input type="radio" id="male" name="gender" value="Male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="male">Female</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email id:</label></td>
+                        <td><input type="text" name="mail" id="mail"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone_no">Phone number:</label></td>
+                        <td><input type="text" id="phone" name="phone"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="no_of_persons">No.of accompanying people:</label></td>
+                        <td><input type="number" name="persons"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="visit_date">Travel Date:</label></td>
+                        <td><input type="date" id="tdate" name="tdate"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="no_of_stay_days">No.of days:</label></td>
+                        <td><input type="number" id="stay" name="stay"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="vehicle">How do you plan to arrive in Sikkim?</label></td>
+                        <td><select id="vehicle_arrive" name="vehicle_arrive">
+                            <option value="Car">Car</option>
+                            <option value="bus">Bus</option>
+                            <option value="Train">Train</option>
+                            <option value="Flight">Flight</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="prefer">Select your preferred tourist spots:</label></td>
+                        <td><input type="checkbox" id="gangtok" name="tourist-places" value="Gangtok">
+                        <label for="gangtok">Gangtok</label><br>
+                        <input type="checkbox" id="tsomgo-lake" name="tourist-places" value="Tsomgo Lake">
+                        <label for="tsomgo-lake">Tsomgo Lake</label><br>
+                        <input type="checkbox" id="nathula-pass" name="tourist-places" value="Nathula Pass">
+                        <label for="nathula-pass">Nathula Pass</label><br>
+                        <input type="checkbox" id="yumthang-valley" name="tourist-places" value="Yumthang Valley">
+                        <label for="yumthang-valley">Yumthang Valley</label><br>
+                        <input type="checkbox" id="rumtek-monastery" name="tourist-places" value="Rumtek Monastery">
+                        <label for="rumtek-monastery">Rumtek Monastery</label><br>
+                        <input type="checkbox" id="babamandir" name="tourist-places" value="BabaMandir">
+                        <label for="babamandir">Baba Mandir</label><br>
+                        <input type="checkbox" id="buddhapark" name="tourist-places" value="Buddha Park">
+                        <label for="buddhapark">Buddha Park</label><br>
+                        <input type="checkbox" id="hanumantok" name="tourist-places" value="Hanuman Tok">
+                        <label for="hanumantok">Hanuman Tok</label><br>
+                        <input type="checkbox" id="falls" name="tourist-places" value="Banjhakri falls">
+                        <label for="falls">Banjhakri falls</label><br>
+                        <input type="checkbox" id="park" name="tourist-places" value="Himalayan Zoological Park">
+                        <label for="park">Himalayan Zoological Park</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="files">Upload verification document:</label></td>
+                        <td><input type="file" name="verify"></td>
+                    </tr>
+                </table>
+                <input style="margin:10px;" type="submit">
+            </form>
+        </center>
+    </body>
+</html>
