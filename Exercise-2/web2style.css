@@ -1,0 +1,18 @@
+.content{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+}
+.box{
+    width:450px;
+    height:500px;
+    border:1px solid black;
+    margin:10px;
+    padding:10px;
+    border-radius:15px;
+    box-shadow:2px 2px 2px lightslategray;
+    background-image:url('https://image.slidesdocs.com/responsive-images/docs/wallpaper-with-clear-blue-sky-and-white-clouds-page-border-background-word-template_9b5f83b74d__1131_1600.jpg');
+    background-size: 100%;
+    font-weight: 100;
+}
