@@ -2,23 +2,48 @@
 <html>
     <head>
         <style>
-            
+            td{
+                padding:15px;
+                vertical-align: middle;
+            }
+            table,tr{
+                border:1px solid black;
+                border-collapse: collapse;
+            }
+            a{
+                text-decoration: none;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+            tr:hover{
+                background-color:gray;
+            }
+            table{
+                margin:0 auto;
+            }
         </style>
     </head>
     <body>
        <table>
-            <tr>
-                <td>Exercise-1</td>
-                <td><a href="Exercise-1/web1.html">Go to Exercise 1</a></td>
-            </tr> 
-            <tr>
-                <td>Exercise 2</td>
-                <td><a href="Exercise-2/web2.html">Go to Exercise 2</a></td>
-            </tr>
-            <tr>
-                <td>Exercise-4.1<br>Exercise-4.2</td>
-                <td><a href="Exercise-4/web4.html">Go to Exercise 4.1</a><br><a href="Exercise-4/web5.html">Go to Exercise 4.2</a></td>
-                <td></td>
-            </tr>
+            <thead>
+                <th>Exercises</th>
+                <th>Links</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Exercise-1</td>
+                    <td><a href="Exercise-1/web1.html">Go to Exercise 1</a></td>
+                </tr> 
+                <tr>
+                    <td>Exercise 2</td>
+                    <td><a href="Exercise-2/web2.html">Go to Exercise 2</a></td>
+                </tr>
+                <tr>
+                    <td>Exercise-4.1<br>Exercise-4.2</td>
+                    <td><a href="Exercise-4/web4.html">Go to Exercise 4.1</a><br><a href="Exercise-4/web5.html">Go to Exercise 4.2</a></td>
+                    <td></td>
+                </tr>
+            </tbody>
     </body>
 </html>
