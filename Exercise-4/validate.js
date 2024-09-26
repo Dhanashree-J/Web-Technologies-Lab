@@ -62,6 +62,12 @@ function validateForm()
            alert("Enter the number of days staying");
            return false;
        }
+       var location=document.getElementById("location").value;
+       if(location==="")
+       {
+            alert("Enter pickup location");
+            return false;
+       }
        var places = document.getElementsByName("tourist-places");
        var selected= false;
        for (var i = 0; i < places.length; i++) 
