@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            tr,td{
+                padding:4px;
+                margin:7px;
+            }
+        </style>
+    </head>
+    <body style="background-image:url('https://images.unsplash.com/photo-1638443523564-46b8a648c5a1?fm=jpg&w=3000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3');">
+        <center>
+            <div style="display:flex;justify-content: center;">
+                <img src="https://w0.peakpx.com/wallpaper/783/545/HD-wallpaper-grim-reaper-crow-dark-death-graveyard-halloween-moon-moonlight-night.jpg" style="width:40%;height:95vh;">
+                <form action="ass1" method="POST" name="myform" style="margin:10% 10%;color:white;">
+                    <table>
+                        <tr>
+                            <td><label for="name">Name:</label></td>
+                            <td><input type="text" id="name" name="name"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="gender">Gender:</label></td>
+                            <td>
+                                <input type="radio" id="male" name="gender" value="Male" required>
+                                <label for="male">Male</label><br>
+                                <input type="radio" id="female" name="gender" value="Female">
+                                <label for="female">Female</label><br>
+                                <input type="radio" id="other" name="gender" value="Other">
+                                <label for="other">Other</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="age">Age:</label></td>
+                            <td><input type="number" id="age" name="age" min="1" max="100"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="prefer">Select your preferred food item:</label></td>
+                            <td><input type="checkbox" id="panipuri" name="food-item" value="Panipuri">
+                            <label for="panipuri">Panipuri</label><br>
+                            <input type="checkbox" id="pizza" name="food-item" value="Pizza">
+                            <label for="pizza">Veg Paneer Pizza</label><br>
+                            <input type="checkbox" id="burger" name="food-item" value="Burger">
+                            <label for="burger">Veg Burger</label><br>
+                            <input type="checkbox" id="sandwich" name="food-item" value="Sandwich">
+                            <label for="sandwich">Veg Sandwich</label><br>
+                            <input type="checkbox" id="cutlet" name="food-item" value="Cutlet">
+                            <label for="cutlet">Cutlet</label><br>
+                            <input type="checkbox" id="french-fries" name="food-item" value="French-fries">
+                            <label for="french-fries">French-fries</label><br>
+                            <input type="checkbox" id="veg-roll" name="food-item" value="Veg-roll">
+                            <label for="veg-roll">Veg Roll</label><br>
+                            <input type="checkbox" id="puffs" name="food-item" value="Puffs">
+                            <label for="puffs">Veg Puffs</label><br>
+                            <input type="checkbox" id="samosa" name="food-item" value="Samosa">
+                            <label for="samosa">Samosa</label><br>
+                            <input type="checkbox" id="bhel-puri" name="food-item" value="Bhel-puri">
+                            <label for="bhel-puri">Bhel-puri</label></td>
+                        </tr>
+                    </table>
+                    <input type="submit" value="Done">
+                </form>
+            </div>
+        </center>
+    </body>
+</html>

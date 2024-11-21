@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sikkim Travel Guide</title>
+    <style>
+        td{
+            padding:5px;
+            margin:7px;
+        }
+        label{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div style="display:flex;justify-content: center;">
+            <img src="https://naturevoyege.com/wp-content/uploads/2021/08/SIKKIM-TRAVEL-GUIDE.jpg" style="width:50vw;height:95vh;margin:15px;">
+            <div style="align-self: center;margin:15px;">
+                <h2>Have a memorabke Sikkim Trip</h2>
+                <form action="TravelServlet" method="post">
+                    <table>
+                        <tr>
+                            <td><label>Name:</label></td>
+                            <td><input type="text" id="name" name="name"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Select your interests:</label></td>
+                            <td>
+                                <input type="checkbox" name="interest" value="Nature"> Nature & Scenery<br>
+                                <input type="checkbox" name="interest" value="Culture"> Culture & Heritage<br>
+                                <input type="checkbox" name="interest" value="Food"> Sikkimese Cuisine<br>
+                                <input type="checkbox" name="interest" value="Festivals"> Festivals & Events
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="submit" value="Get Recommendations" style="margin:5px;">
+                </form>
+            </div>
+        </div>
+    </center>
+</body>
+</html>

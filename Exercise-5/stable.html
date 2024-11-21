@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compatibility Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            font-weight: bold;
+        }
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007BFF;
+            color: #fff;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .individual-section {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Compatibility Checker</h1>
+        <h2>Input Preferences for Each Individual</h2>
+        <form action="compatibility" method="post">
+            <!-- Section for Man 1 -->
+            <div class="individual-section">
+                <h3>Man 1</h3>
+                <label for="man1_cuisine">Favorite Cuisine:</label>
+                <select name="man1_cuisine" id="man1_cuisine">
+                    <option value="italian">Italian</option>
+                    <option value="mexican">Mexican</option>
+                    <option value="indian">Indian</option>
+                    <option value="chinese">Chinese</option>
+                    <option value="thai">Thai</option>
+                    <option value="japanese">Japanese</option>
+                </select>
+    
+                <label for="man1_exercise">Preferred Exercise:</label>
+                <select name="man1_exercise" id="man1_exercise">
+                    <option value="running">Running</option>
+                    <option value="yoga">Yoga</option>
+                    <option value="gym">Gym</option>
+                    <option value="swimming">Swimming</option>
+                    <option value="cycling">Cycling</option>
+                    <option value="dancing">Dancing</option>
+                </select>
+    
+                <label for="man1_movie">Favorite Movie Genre:</label>
+                <select name="man1_movie" id="man1_movie">
+                    <option value="action">Action</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="drama">Drama</option>
+                    <option value="horror">Horror</option>
+                    <option value="romance">Romance</option>
+                    <option value="documentary">Documentary</option>
+                </select>
+    
+                <label for="man1_travel">Preferred Travel Destination:</label>
+                <select name="man1_travel" id="man1_travel">
+                    <option value="beach">Beach</option>
+                    <option value="mountains">Mountains</option>
+                    <option value="city">City</option>
+                    <option value="desert">Desert</option>
+                    <option value="countryside">Countryside</option>
+                    <option value="forest">Forest</option>
+                </select>
+    
+                <label for="man1_weather">Preferred Weather:</label>
+                <select name="man1_weather" id="man1_weather">
+                    <option value="sunny">Sunny</option>
+                    <option value="rainy">Rainy</option>
+                    <option value="snowy">Snowy</option>
+                    <option value="cloudy">Cloudy</option>
+                    <option value="windy">Windy</option>
+                    <option value="stormy">Stormy</option>
+                </select>
+    
+                <label for="man1_vacation">Ideal Vacation Activity:</label>
+                <select name="man1_vacation" id="man1_vacation">
+                    <option value="beach_relaxation">Beach Relaxation</option>
+                    <option value="adventure_sports">Adventure Sports</option>
+                    <option value="sightseeing">Sightseeing</option>
+                    <option value="spa_retreat">Spa Retreat</option>
+                    <option value="nature_walks">Nature Walks</option>
+                    <option value="cultural_exploration">Cultural Exploration</option>
+                </select>
+            </div>
+            <!--Man2-->
+            <div class="individual-section">
+                <h3>Man 2</h3>
+                <label for="man2_cuisine">Favorite Cuisine:</label>
+                <select name="man2_cuisine" id="man2_cuisine">
+                    <option value="italian">Italian</option>
+                    <option value="mexican">Mexican</option>
+                    <option value="indian">Indian</option>
+                    <option value="chinese">Chinese</option>
+                    <option value="thai">Thai</option>
+                    <option value="japanese">Japanese</option>
+                </select>
+    
+                <label for="man2_exercise">Preferred Exercise:</label>
+                <select name="man2_exercise" id="man2_exercise">
+                    <option value="running">Running</option>
+                    <option value="yoga">Yoga</option>
+                    <option value="gym">Gym</option>
+                    <option value="swimming">Swimming</option>
+                    <option value="cycling">Cycling</option>
+                    <option value="dancing">Dancing</option>
+                </select>
+    
+                <label for="man2_movie">Favorite Movie Genre:</label>
+                <select name="man2_movie" id="man2_movie">
+                    <option value="action">Action</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="drama">Drama</option>
+                    <option value="horror">Horror</option>
+                    <option value="romance">Romance</option>
+                    <option value="documentary">Documentary</option>
+                </select>
+    
+                <label for="man2_travel">Preferred Travel Destination:</label>
+                <select name="man2_travel" id="man2_travel">
+                    <option value="beach">Beach</option>
+                    <option value="mountains">Mountains</option>
+                    <option value="city">City</option>
+                    <option value="desert">Desert</option>
+                    <option value="countryside">Countryside</option>
+                    <option value="forest">Forest</option>
+                </select>
+    
+                <label for="man2_weather">Preferred Weather:</label>
+                <select name="man2_weather" id="man2_weather">
+                    <option value="sunny">Sunny</option>
+                    <option value="rainy">Rainy</option>
+                    <option value="snowy">Snowy</option>
+                    <option value="cloudy">Cloudy</option>
+                    <option value="windy">Windy</option>
+                    <option value="stormy">Stormy</option>
+                </select>
+    
+                <label for="man2_vacation">Ideal Vacation Activity:</label>
+                <select name="man2_vacation" id="man2_vacation">
+                    <option value="beach_relaxation">Beach Relaxation</option>
+                    <option value="adventure_sports">Adventure Sports</option>
+                    <option value="sightseeing">Sightseeing</option>
+                    <option value="spa_retreat">Spa Retreat</option>
+                    <option value="nature_walks">Nature Walks</option>
+                    <option value="cultural_exploration">Cultural Exploration</option>
+                </select>
+            </div>
+
+            <!--Man3-->
+            <div class="individual-section">
+                <h3>Man 3</h3>
+                <label for="man3_cuisine">Favorite Cuisine:</label>
+                <select name="man3_cuisine" id="man3_cuisine">
+                    <option value="italian">Italian</option>
+                    <option value="mexican">Mexican</option>
+                    <option value="indian">Indian</option>
+                    <option value="chinese">Chinese</option>
+                    <option value="thai">Thai</option>
+                    <option value="japanese">Japanese</option>
+                </select>
+    
+                <label for="man3_exercise">Preferred Exercise:</label>
+                <select name="man3_exercise" id="man3_exercise">
+                    <option value="running">Running</option>
+                    <option value="yoga">Yoga</option>
+                    <option value="gym">Gym</option>
+                    <option value="swimming">Swimming</option>
+                    <option value="cycling">Cycling</option>
+                    <option value="dancing">Dancing</option>
+                </select>
+    
+                <label for="man3_movie">Favorite Movie Genre:</label>
+                <select name="man3_movie" id="man3_movie">
+                    <option value="action">Action</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="drama">Drama</option>
+                    <option value="horror">Horror</option>
+                    <option value="romance">Romance</option>
+                    <option value="documentary">Documentary</option>
+                </select>
+    
+                <label for="man3_travel">Preferred Travel Destination:</label>
+                <select name="man3_travel" id="man3_travel">
+                    <option value="beach">Beach</option>
+                    <option value="mountains">Mountains</option>
+                    <option value="city">City</option>
+                    <option value="desert">Desert</option>
+                    <option value="countryside">Countryside</option>
+                    <option value="forest">Forest</option>
+                </select>
+    
+                <label for="weather">Preferred Weather:</label>
+                <select name="man3_weather" id="man3_weather">
+                    <option value="sunny">Sunny</option>
+                    <option value="rainy">Rainy</option>
+                    <option value="snowy">Snowy</option>
+                    <option value="cloudy">Cloudy</option>
+                    <option value="windy">Windy</option>
+                    <option value="stormy">Stormy</option>
+                </select>
+    
+                <label for="man3_vacation">Ideal Vacation Activity:</label>
+                <select name="man3_vacation" id="man3_vacation">
+                    <option value="beach_relaxation">Beach Relaxation</option>
+                    <option value="adventure_sports">Adventure Sports</option>
+                    <option value="sightseeing">Sightseeing</option>
+                    <option value="spa_retreat">Spa Retreat</option>
+                    <option value="nature_walks">Nature Walks</option>
+                    <option value="cultural_exploration">Cultural Exploration</option>
+                </select>
+            </div>
+
+            <!-- Section for Woman 1 -->
+            <div class="individual-section">
+                <h3>Woman 1</h3>
+                <label for="woman1_cuisine">Favorite Cuisine:</label>
+                <select name="woman1_cuisine" id="woman1_cuisine">
+                    <option value="italian">Italian</option>
+                    <option value="mexican">Mexican</option>
+                    <option value="indian">Indian</option>
+                    <option value="chinese">Chinese</option>
+                    <option value="thai">Thai</option>
+                    <option value="japanese">Japanese</option>
+                </select>
+    
+                <label for="woman1_exercise">Preferred Exercise:</label>
+                <select name="woman1_exercise" id="woman1_exercise">
+                    <option value="running">Running</option>
+                    <option value="yoga">Yoga</option>
+                    <option value="gym">Gym</option>
+                    <option value="swimming">Swimming</option>
+                    <option value="cycling">Cycling</option>
+                    <option value="dancing">Dancing</option>
+                </select>
+    
+                <label for="woman1_movie">Favorite Movie Genre:</label>
+                <select name="woman1_movie" id="woman1_movie">
+                    <option value="action">Action</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="drama">Drama</option>
+                    <option value="horror">Horror</option>
+                    <option value="romance">Romance</option>
+                    <option value="documentary">Documentary</option>
+                </select>
+    
+                <label for="woman1_travel">Preferred Travel Destination:</label>
+                <select name="woman1_travel" id="woman1_travel">
+                    <option value="beach">Beach</option>
+                    <option value="mountains">Mountains</option>
+                    <option value="city">City</option>
+                    <option value="desert">Desert</option>
+                    <option value="countryside">Countryside</option>
+                    <option value="forest">Forest</option>
+                </select>
+    
+                <label for="woman1_weather">Preferred Weather:</label>
+                <select name="woman1_weather" id="woman1_weather">
+                    <option value="sunny">Sunny</option>
+                    <option value="rainy">Rainy</option>
+                    <option value="snowy">Snowy</option>
+                    <option value="cloudy">Cloudy</option>
+                    <option value="windy">Windy</option>
+                    <option value="stormy">Stormy</option>
+                </select>
+    
+                <label for="woman1_vacation">Ideal Vacation Activity:</label>
+                <select name="woman1_vacation" id="woman1_vacation">
+                    <option value="beach_relaxation">Beach Relaxation</option>
+                    <option value="adventure_sports">Adventure Sports</option>
+                    <option value="sightseeing">Sightseeing</option>
+                    <option value="spa_retreat">Spa Retreat</option>
+                    <option value="nature_walks">Nature Walks</option>
+                    <option value="cultural_exploration">Cultural Exploration</option>
+                </select>
+            </div>
+
+            <div class="individual-section">
+                <h3>Woman 2</h3>
+                <label for="woman2_cuisine">Favorite Cuisine:</label>
+                <select name="woman2_cuisine" id="woman2_cuisine">
+                    <option value="italian">Italian</option>
+                    <option value="mexican">Mexican</option>
+                    <option value="indian">Indian</option>
+                    <option value="chinese">Chinese</option>
+                    <option value="thai">Thai</option>
+                    <option value="japanese">Japanese</option>
+                </select>
+    
+                <label for="woman2_exercise">Preferred Exercise:</label>
+                <select name="woman2_exercise" id="woman2_exercise">
+                    <option value="running">Running</option>
+                    <option value="yoga">Yoga</option>
+                    <option value="gym">Gym</option>
+                    <option value="swimming">Swimming</option>
+                    <option value="cycling">Cycling</option>
+                    <option value="dancing">Dancing</option>
+                </select>
+    
+                <label for="woman2_movie">Favorite Movie Genre:</label>
+                <select name="woman2_movie" id="woman2_movie">
+                    <option value="action">Action</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="drama">Drama</option>
+                    <option value="horror">Horror</option>
+                    <option value="romance">Romance</option>
+                    <option value="documentary">Documentary</option>
+                </select>
+    
+                <label for="woman2_travel">Preferred Travel Destination:</label>
+                <select name="woman2_travel" id="woman2_travel">
+                    <option value="beach">Beach</option>
+                    <option value="mountains">Mountains</option>
+                    <option value="city">City</option>
+                    <option value="desert">Desert</option>
+                    <option value="countryside">Countryside</option>
+                    <option value="forest">Forest</option>
+                </select>
+    
+                <label for="woman2_weather">Preferred Weather:</label>
+                <select name="woman2_weather" id="woman2_weather">
+                    <option value="sunny">Sunny</option>
+                    <option value="rainy">Rainy</option>
+                    <option value="snowy">Snowy</option>
+                    <option value="cloudy">Cloudy</option>
+                    <option value="windy">Windy</option>
+                    <option value="stormy">Stormy</option>
+                </select>
+    
+                <label for="woman2_vacation">Ideal Vacation Activity:</label>
+                <select name="woman2_vacation" id="woman2_vacation">
+                    <option value="beach_relaxation">Beach Relaxation</option>
+                    <option value="adventure_sports">Adventure Sports</option>
+                    <option value="sightseeing">Sightseeing</option>
+                    <option value="spa_retreat">Spa Retreat</option>
+                    <option value="nature_walks">Nature Walks</option>
+                    <option value="cultural_exploration">Cultural Exploration</option>
+                </select>
+            </div>
+
+            <div class="individual-section">
+                <h3>Woman 3</h3>
+                <label for="woman3_cuisine">Favorite Cuisine:</label>
+                <select name="woman3_cuisine" id="woman3_cuisine">
+                    <option value="italian">Italian</option>
+                    <option value="mexican">Mexican</option>
+                    <option value="indian">Indian</option>
+                    <option value="chinese">Chinese</option>
+                    <option value="thai">Thai</option>
+                    <option value="japanese">Japanese</option>
+                </select>
+    
+                <label for="woman3_exercise">Preferred Exercise:</label>
+                <select name="woman3_exercise" id="woman3_exercise">
+                    <option value="running">Running</option>
+                    <option value="yoga">Yoga</option>
+                    <option value="gym">Gym</option>
+                    <option value="swimming">Swimming</option>
+                    <option value="cycling">Cycling</option>
+                    <option value="dancing">Dancing</option>
+                </select>
+    
+                <label for="woman3_movie">Favorite Movie Genre:</label>
+                <select name="woman3_movie" id="woman3_movie">
+                    <option value="action">Action</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="drama">Drama</option>
+                    <option value="horror">Horror</option>
+                    <option value="romance">Romance</option>
+                    <option value="documentary">Documentary</option>
+                </select>
+    
+                <label for="woman3_travel">Preferred Travel Destination:</label>
+                <select name="woman3_travel" id="woman3_travel">
+                    <option value="beach">Beach</option>
+                    <option value="mountains">Mountains</option>
+                    <option value="city">City</option>
+                    <option value="desert">Desert</option>
+                    <option value="countryside">Countryside</option>
+                    <option value="forest">Forest</option>
+                </select>
+    
+                <label for="woman3_weather">Preferred Weather:</label>
+                <select name="woman3_weather" id="woman3_weather">
+                    <option value="sunny">Sunny</option>
+                    <option value="rainy">Rainy</option>
+                    <option value="snowy">Snowy</option>
+                    <option value="cloudy">Cloudy</option>
+                    <option value="windy">Windy</option>
+                    <option value="stormy">Stormy</option>
+                </select>
+    
+                <label for="woman3_vacation">Ideal Vacation Activity:</label>
+                <select name="woman3_vacation" id="woman3_vacation">
+                    <option value="beach_relaxation">Beach Relaxation</option>
+                    <option value="adventure_sports">Adventure Sports</option>
+                    <option value="sightseeing">Sightseeing</option>
+                    <option value="spa_retreat">Spa Retreat</option>
+                    <option value="nature_walks">Nature Walks</option>
+                    <option value="cultural_exploration">Cultural Exploration</option>
+                </select>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

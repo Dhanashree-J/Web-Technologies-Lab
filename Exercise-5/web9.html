@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Session Handling</title>
+        <style>
+            td,tr{
+                padding:7px;
+                margin:5px;
+            }
+            table{
+                border: 2px solid black;
+                border-collapse: collapse;
+                padding:10px;
+            }
+            label{
+                font-weight: bolder;
+            }
+        </style>
+        <script>
+            function updateValue() {
+                const value=document.getElementById("rating").value;
+              // Display the value
+              document.getElementById("rangeValue").innerHTML = value;
+            }
+          </script>
+    </head>
+    <body style="background-image: url('https://www.alightindia.com/cdn/uploads/postimages/ORIGINAL/sk9--6cbecf.jpg'); background-color: rgba(255, 255, 255, 0.7);
+    background-blend-mode: overlay;background-repeat: no-repeat;background-size: cover;">
+        <h2 style="text-align: center;text-decoration: underline;font-size: 25px;">Sikkim tour Experience</h2>
+        <form style="margin:25px 0;" method="post" action="session">
+            <table align="center">
+                <tr>
+                    <td><label for="pname">Name:</label></td>
+                    <td><input type="text" id="name" name="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="spots">Choose your favourite spots:</label></td>
+                    <td><input type="checkbox" id="gangtok" name="tourist-places" value="Gangtok">
+                        <label for="gangtok">Gangtok</label><br>
+                        <input type="checkbox" id="tsomgo-lake" name="tourist-places" value="Tsomgo Lake">
+                        <label for="tsomgo-lake">Tsomgo Lake</label><br>
+                        <input type="checkbox" id="nathula-pass" name="tourist-places" value="Nathula Pass">
+                        <label for="nathula-pass">Nathula Pass</label><br>
+                        <input type="checkbox" id="yumthang-valley" name="tourist-places" value="Yumthang Valley">
+                        <label for="yumthang-valley">Yumthang Valley</label><br>
+                        <input type="checkbox" id="rumtek-monastery" name="tourist-places" value="Rumtek Monastery">
+                        <label for="rumtek-monastery">Rumtek Monastery</label><br>
+                        <input type="checkbox" id="babamandir" name="tourist-places" value="BabaMandir">
+                        <label for="babamandir">Baba Mandir</label><br>
+                        <input type="checkbox" id="buddhapark" name="tourist-places" value="Buddha Park">
+                        <label for="buddhapark">Buddha Park</label><br>
+                        <input type="checkbox" id="hanumantok" name="tourist-places" value="Hanuman Tok">
+                        <label for="hanumantok">Hanuman Tok</label><br>
+                        <input type="checkbox" id="falls" name="tourist-places" value="Banjhakri falls">
+                        <label for="falls">Banjhakri falls</label><br>
+                        <input type="checkbox" id="park" name="tourist-places" value="Himalayan Zoological Park">
+                        <label for="park">Himalayan Zoological Park</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="rate">Rating:</label></td>
+                    <td><input type="range" id="rating" name="rating" min="0" max="10" oninput="updateValue()"><span id="rangeValue"> </span></td>
+                </tr>
+                <tr>
+                    <td><label for="exp">Some Experience:</label></td>
+                    <td><textarea id="experience" name="experience" rows="6" cols="30"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="stype">Select Session handling method</label></td>
+                    <td><select name="session-type">
+                            <option value="cookies"><label>Cookies</label></option>
+                            <option value="HttpSession"><label>HttpSession</label></option>
+                            <option value="Hidden Form Fields"><label>Hidden Form Fields</label></option>
+                            <option value="URL Rewriting"><label>URL Rewriting</label></option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;"><input type="submit" value="Submit"></td> 
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

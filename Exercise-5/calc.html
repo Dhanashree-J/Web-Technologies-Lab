@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            td{
+                padding:5px;
+                margin:7px;
+            }
+            label{
+                font-weight: bold;
+            }
+        </style>
+        <title>Simple Calculator</title>
+    </head>
+    <body style="margin-top:15%;background-image: url('https://image.slidesdocs.com/responsive-images/background/handdrawn-style-blue-cute-education-math-lovely-powerpoint-background_a698b5341c__960_540.jpg');background-size: 100%;">
+        <center>
+            <h2>Simple Calculator</h2>
+            <form action="sample" method="GET" name="myForm" style="border:1px solid black;margin:10px 38%;">
+                <table>
+                    <tr>
+                        <td><label for="num1">Input 1:</label></td>
+                        <td><input type="number" id="num1" name="number1"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="num2">Input 2:</label></td>
+                        <td><input type="number" id="num2" name="number2"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="operation">Perform:</label></td>
+                        <td><select name="operation" id="operator">
+                        <option value="add">Addition</option>
+                        <option value="sub">Subtraction</option>
+                        <option value="multiply">Multiplication</option>
+                        <option value="divide">Division</option>
+                        <option value="mod">Modulus</option>
+                        <option value="exp">Exponential</option>
+                        </select>
+                    </tr>
+                </table>
+                <input type="submit" value="Calculate" style="margin:10px;">
+            </form>
+        </center>
+    </body>
+</html>
