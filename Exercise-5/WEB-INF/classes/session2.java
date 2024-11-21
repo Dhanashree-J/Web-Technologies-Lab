@@ -17,11 +17,11 @@ public class session2 extends HttpServlet
         put("Himalayan Zoological Park", "https://www.fundayholidays.com/wp-content/uploads/2020/07/Himalayan-Zoological-Park-1.jpg");
     }};
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String name = request.getParameter("name");
-        String Spots = request.getParameter("selectedSpots");
+        String name = request.getParameter("uname");
+        String Spots = request.getParameter("userselectedSpots");
         String[] selectedSpots=Spots.split(",");
-        int rating = Integer.parseInt(request.getParameter("rating"));
-        String feedback = request.getParameter("feedback");
+        int rating = Integer.parseInt(request.getParameter("userrating"));
+        String feedback = request.getParameter("userfeedback");
         PrintWriter out=response.getWriter();
         out.println("<html><head><style>li{list-style-type:none;}body{background-image:url('https://png.pngtree.com/background/20211215/original/pngtree-cute-two-color-spring-gradient-color-simple-background-picture-image_1450404.jpg');background-size:cover;}</style></head><body><center>");
         out.println("<h2>Hi " + name + ", here are your selections!</h2>");

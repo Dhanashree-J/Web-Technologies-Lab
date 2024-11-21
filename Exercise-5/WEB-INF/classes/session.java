@@ -61,10 +61,10 @@ public class session extends HttpServlet {
             // Use hidden form fields to pass data
             out.println("<html><body><center>");
             out.println("<form action='session2' method='post'>");
-            out.println("<input type='hidden' name='name' value='" + name + "'>");
-            out.println("<input type='hidden' name='selectedSpots' value='" + String.join(",", selectedSpots) + "'>");
-            out.println("<input type='hidden' name='rating' value='" + rating + "'>");
-            out.println("<input type='hidden' name='feedback' value='" + feedback + "'>");
+            out.println("<input type='hidden' name='uname' value='" + name + "'>");
+            out.println("<input type='hidden' name='userselectedSpots' value='" + String.join(",", selectedSpots) + "'>");
+            out.println("<input type='hidden' name='userrating' value='" + rating + "'>");
+            out.println("<input type='hidden' name='userfeedback' value='" + feedback + "'>");
             out.println("<input type='submit' value='Go to next page'></form>");
             out.println("</center></body></html>");
             return; // Exit here to prevent further processing in this servlet
