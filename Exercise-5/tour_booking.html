@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Tour - Sikkim</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://www.gosikkim.in/wp-content/uploads/2023/05/Sikkim-Tour-Packages.jpg');
+        background-size: cover;
+        background-color: rgba(255, 255, 255, 0.3);
+        background-blend-mode: overlay;
+        }
+        header {
+            background: linear-gradient(90deg, #0f3460, #53354a);
+            color: #e0e0e0;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3em;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        .container {
+            text-align: center;
+            padding: 50px 50px 10px 50px;
+        }
+        .description {
+            font-size: 1.2em;
+            color:black;
+            margin-top: 20px;
+            max-width: 800px;
+            margin: 8px auto;
+            padding: 10px;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            width: 450px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+        }
+
+        .form-container input, .form-container select {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .form-container button {
+            background-color: #53354a;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+
+        .form-container button:hover {
+            background-color: #0f3460;
+        }
+
+        .form-container button:active {
+            transform: scale(0.98);
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .button-container button {
+            padding: 7px;
+            margin: 5px;
+            font-size: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #53354a;
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+        .button-container button:hover {
+            background-color: #0f3460;
+        }
+
+        .button-container button:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Book Your Sikkim Tour</h1>
+</header>
+
+<div class="container">
+    <p class="description">
+        Please fill out the form below to book your tour to the beautiful destinations of Sikkim. We offer a variety of tours to suit your preferences.
+    </p>
+
+    <div class="form-container">
+        <form action="tour_booking" method="POST">
+            <table>
+                <tr>
+                    <td> <label for="name">Name:</label></td>
+                    <td> <input type="text" id="name" name="name" required placeholder="Enter your full name"></td>
+                </tr>
+                <tr>
+                    <td><label for="aadhar">Aadhar number:</label></td>
+                    <td><input type="text" id="aadhar" name="aadhar" required placeholder="Enter your aadhar"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" required placeholder="Enter your email"></td>
+                </tr>
+                <tr>
+                    <td><label for="tour_type">Tour Type:</label></td>
+                    <td> <select id="tour_type" name="tour_type" required>
+                        <option value="Adventure">Adventure Tour</option>
+                        <option value="Cultural">Cultural Tour</option>
+                        <option value="Nature">Nature Tour</option>
+                        <option value="Pilgrimage">Pilgrimage Tour</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="tour_date">Preferred Date:</label></td>
+                    <td><input type="date" id="tour_date" name="tour_date" required></td>
+                </tr>
+                <tr>
+                    <td><label for="no_of_people">Number of People:</label></td>
+                    <td><input type="number" id="no_of_people" name="no_of_people" required placeholder="Enter number of people"></td>
+                </tr>
+            </table>
+            <input style="text-align: center;width:150px;" type="submit" value="Book Tour">
+        </form>
+    </div>
+</div>
+
+<div class="button-container">
+    <a href="database.html"><button>Back to Home</button></a>
+</div>
+
+</body>
+</html>

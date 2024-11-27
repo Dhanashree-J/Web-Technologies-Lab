@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Tour Booking - Sikkim Tour System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://www.gosikkim.in/wp-content/uploads/2023/05/Sikkim-Tour-Packages.jpg');
+        background-size: cover;
+        background-color: rgba(255, 255, 255, 0.3);
+        background-blend-mode: overlay;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(90deg, #0f3460, #53354a);
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        .container {
+            text-align: center;
+            padding: 50px 50px 10px 50px;
+        }
+        .form-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            width: 400px;
+            margin: 0 auto;
+            color:black;
+        }
+        .form-container input {
+            width: 95%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .form-container button {
+            background-color: #53354a;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+        .form-container button:hover {
+            background-color: #0f3460;
+        }
+        .form-container button:active {
+            transform: scale(0.98);
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .button-container button {
+            padding: 7px;
+            margin: 5px;
+            font-size: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #53354a;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        .button-container button:hover {
+            background-color: #0f3460; 
+                }
+        .button-container button:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Delete Your Tour Booking</h1>
+</header>
+
+<div class="container">
+    <div class="form-container">
+        <h2>Enter Your Aadhar Number to Delete the Booking</h2>
+        <form action="tour_delete" method="POST">
+            <label for="aadhar">Aadhar Number:</label>
+            <input type="text" id="aadhar" name="aadhar" required placeholder="Enter your Aadhar number">
+            <button type="submit">Delete Booking</button>
+        </form>
+    </div>
+</div>
+<div class="button-container">
+    <a href="database.html"><button>Back to Home</button></a>
+</div>
+
+</body>
+</html>

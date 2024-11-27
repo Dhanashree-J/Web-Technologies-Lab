@@ -72,4 +72,74 @@
         <servlet-name>compatibility</servlet-name>
         <url-pattern>/compatibility</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>p12_db1</servlet-name>
+        <servlet-class>p12_db1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>p12_db1</servlet-name>
+        <url-pattern>/p12_db1</url-pattern>
+    </servlet-mapping>
+    <!--  Program p12_db2.java  -->
+    <servlet>
+        <servlet-name>p12_db2</servlet-name>
+        <servlet-class>p12_db2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>p12_db2</servlet-name>
+        <url-pattern>/p12_db2</url-pattern>
+    </servlet-mapping>
+    <!--  Program p12_db3.java  -->
+    <servlet>
+        <servlet-name>p12_db3</servlet-name>
+        <servlet-class>p12_db3</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>p12_db3</servlet-name>
+        <url-pattern>/p12_db3</url-pattern>
+    </servlet-mapping>
+     <servlet>
+        <servlet-name>tour_booking</servlet-name>
+        <servlet-class>tour_booking</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>tour_booking</servlet-name>
+        <url-pattern>/tour_booking</url-pattern>
+    </servlet-mapping>
+
+     <servlet>
+        <servlet-name>tour_review</servlet-name>
+        <servlet-class>tour_review</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>tour_review</servlet-name>
+        <url-pattern>/tour_review</url-pattern>
+    </servlet-mapping>
+
+     <servlet>
+        <servlet-name>tour_delete</servlet-name>
+        <servlet-class>tour_delete</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>tour_delete</servlet-name>
+        <url-pattern>/tour_delete</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>view_bookings</servlet-name>
+        <servlet-class>view_bookings</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>view_bookings</servlet-name>
+        <url-pattern>/view_bookings</url-pattern>
+    </servlet-mapping>
+
+     <servlet>
+        <servlet-name>view_reviews</servlet-name>
+        <servlet-class>view_reviews</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>view_reviews</servlet-name>
+        <url-pattern>/view_reviews</url-pattern>
+    </servlet-mapping>
 </web-app>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sikkim Tour Booking & Review System</title>
+    <style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('https://www.gosikkim.in/wp-content/uploads/2023/05/Sikkim-Tour-Packages.jpg');
+        background-size: cover;
+        background-color: rgba(255, 255, 255, 0.3);
+        background-blend-mode: overlay;
+        color:linear-gradient(135deg, #1a1a2e, #16213e); 
+    }
+    header {
+        background: linear-gradient(90deg, #0f3460, #53354a); 
+        color: #e0e0e0;
+        padding: 20px 0;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 3em;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .container {
+        text-align: center;
+        padding: 50px;
+    }
+
+    .description {
+        font-size: 1.2em;
+        color:black;
+        margin-top: 20px;
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    /* Button Container */
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    /* Buttons */
+    .button-container button{
+        padding: 15px 30px;
+        font-size: 1.2em;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        background: linear-gradient(90deg, #53354a, #0f3460); /* Dark, moody gradient */
+        color: #ffffff;
+        font-weight: bold;
+        transition: transform 0.2s, box-shadow 0.3s;
+        width: 240px;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .button-container button:hover{
+        transform: translateY(-4px);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .button-container button:active{
+        transform: translateY(0);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    /* User Buttons */
+    #userbtns {
+        display: none;
+    }
+        /* User Buttons */
+  /* User Buttons */
+#userbtns button {
+    padding: 10px;
+    font-size: 1em;
+    margin: 5px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background:#53354a; 
+    color: #ffffff; 
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.3s;
+    width: 220px;
+    height: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#userbtns button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+    background:#0f3460;
+}
+
+#userbtns button:active {
+    transform: translateY(0);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sikkim Tour Booking & Review System</h1>
+</header>
+
+<div class="container">
+    <p class="description">
+        Welcome to the Sikkim Tour Booking & Review System. You can explore the beautiful tourist spots of Sikkim, book your tours, and leave your reviews after your journey. Get ready for a wonderful experience in Sikkim!
+    </p>
+
+    <div class="button-container">
+        <button onclick="document.getElementById('userbtns').style='display:block;'">Book a Tour</button>
+        <div id="userbtns">
+            <a href="tour_booking.html"><button>Booking new</button></a>
+            <a href="tour_booking.html"><button>Update the booked tour</button></a>
+            <a href="tour_delete.html"><button>Delete the booked tour</button></a>
+        </div>
+        <a href="tour_review.html"><button>Leave a Review</button></a>
+        <a href="admin_dashboard.html"><button>Admin Dashboard</button></a>
+    </div>
+</div>
+
+</body>
+</html>
