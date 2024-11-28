@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Tourist Spot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Delete Tourist Spot</h1>
+        <form method="POST" action="database.php">
+            <input type="hidden" name="operation" value="delete">
+            <div class="form-group">
+                <label for="tourist_spot">Tourist Spot Name:</label>
+                <input type="text" id="tourist_spot" name="tourist_spot" required placeholder="Enter the name of the tourist spot">
+            </div>
+            <button type="submit">Delete</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sikkim Highlights - Select Operation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function redirectToPage() {
+            const operation = document.getElementById('operation').value;
+            if (operation) {
+                window.location.href = operation + ".html";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Sikkim Highlights - Select Operation</h1>
+        <form>
+            <div class="form-group">
+                <label for="operation">Select Operation:</label>
+                <select name="operation" id="operation" onchange="redirectToPage()" required>
+                    <option value="">Select an Operation</option>
+                    <option value="create">Create</option>
+                    <option value="view">View</option>
+                    <option value="update">Update</option>
+                    <option value="delete">Delete</option>
+                </select>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
