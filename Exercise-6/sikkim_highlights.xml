@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<attractions>
+    <attraction>
+        <name>Gurudongmar Lake</name>
+        <category>Nature</category>
+        <region>North Sikkim</region>
+        <description>One of the highest lakes in the world, renowned for its pristine beauty.</description>
+    </attraction>
+    <attraction>
+        <name>Tsomgo Lake</name>
+        <category>Nature</category>
+        <region>East Sikkim</region>
+        <description>A glacial lake surrounded by snow-capped mountains.</description>
+    </attraction>
+    <attraction>
+    <name>Rumtek Monastery</name>
+    <category>Heritage</category>
+    <region>East Sikkim</region>
+    <description>A spiritual and architectural marvel of Sikkim.</description>
+    </attraction>
+    <attraction>
+        <name>Yuksom</name>
+        <category>Heritage</category>
+        <region>West Sikkim</region>
+        <description>The historical town where the first Chogyal (king) of Sikkim was crowned.</description>
+    </attraction>
+    <attraction>
+        <name>Khangchendzonga National Park</name>
+        <category>Nature</category>
+        <region>North Sikkim</region>
+        <description>A UNESCO World Heritage Site, home to diverse flora and fauna and the majestic Khangchendzonga mountain.</description>
+    </attraction>
+    <attraction>
+        <name>Namchi</name>
+        <category>Spiritual</category>
+        <region>South Sikkim</region>
+        <description>Known for its grand statues of Lord Shiva and a peaceful retreat in the lap of nature.</description>
+    </attraction>
+    <attraction>
+        <name>Pelling</name>
+        <category>Adventure</category>
+        <region>West Sikkim</region>
+        <description>A popular destination for trekkers, offering views of Khangchendzonga and other Himalayan peaks.</description>
+    </attraction>
+    <attraction>
+        <name>Sevok Monastery</name>
+        <category>Heritage</category>
+        <region>North Sikkim</region>
+        <description>Known for its spiritual significance and tranquil environment.</description>
+    </attraction>
+    <attraction>
+        <name>Singalila National Park</name>
+        <category>Nature</category>
+        <region>North Sikkim</region>
+        <description>A paradise for trekkers, offering scenic views of the Himalayan range.</description>
+    </attraction>
+    <attraction>
+        <name>Ravangla</name>
+        <category>Adventure</category>
+        <region>South Sikkim</region>
+        <description>A serene town offering breathtaking views of the Kanchenjunga range, popular for trekking and nature walks.</description>
+    </attraction>
+    <attraction>
+        <name>Khecheopalri Lake</name>
+        <category>Spiritual</category>
+        <region>West Sikkim</region>
+        <description>A sacred lake revered by Buddhists and Hindus, known for its tranquil surroundings and clear waters.</description>
+    </attraction>
+    <attraction>
+        <name>Rimbi Waterfalls</name>
+        <category>Nature</category>
+        <region>West Sikkim</region>
+        <description>A beautiful waterfall surrounded by lush greenery, offering a peaceful and scenic view.</description>
+    </attraction>
+    <attraction>
+        <name>Varsey Rhododendron Sanctuary</name>
+        <category>Nature</category>
+        <region>West Sikkim</region>
+        <description>A natural sanctuary known for its stunning rhododendron forests and panoramic mountain views.</description>
+    </attraction>
+    <attraction>
+        <name>Ganesh Tok</name>
+        <category>Spiritual</category>
+        <region>East Sikkim</region>
+        <description>A small temple dedicated to Lord Ganesha, offering panoramic views of Gangtok and the surrounding mountains.</description>
+    </attraction>
+    <attraction>
+        <name>Siddheshwar Dham</name>
+        <category>Spiritual</category>
+        <region>South Sikkim</region>
+        <description>A prominent religious site with replicas of the 12 Jyotirlingas and a peaceful ambiance.</description>
+    </attraction>
+    <attraction>
+        <name>Samdruptse</name>
+        <category>Spiritual</category>
+        <region>South Sikkim</region>
+        <description>Home to a giant statue of Guru Padmasambhava, revered by Buddhists as a spiritual leader.</description>
+    </attraction>
+    <attraction>
+        <name>Teesta River</name>
+        <category>Adventure</category>
+        <region>East Sikkim</region>
+        <description>Popular for white-water rafting and the picturesque views along its banks.</description>
+    </attraction>
+    <attraction>
+        <name>Bloomfield Falls</name>
+        <category>Nature</category>
+        <region>West Sikkim</region>
+        <description>A stunning waterfall located in the rugged terrains of West Sikkim, known for its pristine beauty.</description>
+    </attraction>
+    <attraction>
+        <name>Nathula Pass</name>
+        <category>Adventure</category>
+        <region>East Sikkim</region>
+        <description>A high-altitude mountain pass on the Indo-China border, known for its breathtaking views, historical significance, and a popular spot for trekkers and adventure lovers.</description>
+    </attraction>
+
+    <attraction>
+        <name>Himalayan National Park</name>
+        <category>Nature</category>
+        <region>North Sikkim</region>
+        <description>A UNESCO World Heritage Site, this park is home to a diverse range of flora and fauna, including rare species like the red panda, snow leopard, and Himalayan tahr.</description>
+    </attraction>
+
+    <attraction>
+        <name>Baba Mandir</name>
+        <category>Spiritual</category>
+        <region>East Sikkim</region>
+        <description>A temple dedicated to Baba Harbhajan Singh, a revered soldier of the Indian Army, believed to be a spiritual figure by locals, located near Nathula Pass.</description>
+    </attraction>
+</attractions>

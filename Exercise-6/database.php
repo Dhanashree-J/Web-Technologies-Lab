@@ -74,6 +74,5 @@ else{
         echo "No records found.";
     }
 }
-
 $conn->close();
 ?>
