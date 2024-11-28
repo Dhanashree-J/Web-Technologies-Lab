@@ -1,19 +1,15 @@
 <?php
-// Database connection details
 $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "phpdatabase";
 
-// Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Check if the form was submitted via POST
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $operation = $_POST['operation'] ?? null;
     $tourist_spot = $_POST['tourist_spot'] ?? null;
@@ -79,6 +75,5 @@ else{
     }
 }
 
-// Close connection
 $conn->close();
 ?>
