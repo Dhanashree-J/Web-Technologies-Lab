@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sikkim Highlights</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1c1c1c;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('dark-sikkim-mountains.jpg');
+            background-size: cover;
+            color: #f1f1f1;
+        }
+
+        .login-container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            width: 350px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #f1f1f1;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+            color: #bbb;
+        }
+
+        select, input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #555;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+            background-color: #333;
+            color: #f1f1f1;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            background-color: #4a7c6e;
+            color: white;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #3f6959;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Page Visit Counter</h2>
+        <form action="user_visit_counts" method="post">
+            <label for="username">Name:</label>
+            <input type="text" id="username" name="username" required placeholder="Enter your name">
+
+            <label for="spot">Favorite Spot:</label>
+            <select id="spot" name="spot" required>
+                <option value="Rumtek Monastery">Rumtek Monastery</option>
+                <option value="Kanchenjunga National Park">Kanchenjunga National Park</option>
+                <option value="Tsongmo Lake">Tsongmo Lake</option>
+                <option value="Yumthang Valley">Yumthang Valley</option>
+                <option value="Nathula Pass">Nathula Pass</option>
+                <option value="Baba Mandhir">Baba Mandhir</option>
+                <option value="Buddha Park">Buddha Park</option>
+                <option value="Hanuman Tok">Hanuman Tok</option>
+                <option value="Himalayan Zoological Park">Himalayan Zoological Park</option>
+            </select>
+            <input type="submit" value="Visit">
+        </form>
+    </div>
+</body>
+</html>

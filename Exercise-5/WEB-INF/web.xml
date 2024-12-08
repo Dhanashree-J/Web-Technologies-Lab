@@ -142,4 +142,14 @@
         <servlet-name>view_reviews</servlet-name>
         <url-pattern>/view_reviews</url-pattern>
     </servlet-mapping>
+
+      <servlet>
+        <servlet-name>user_visit_counts</servlet-name>
+        <servlet-class>user_visit_counts</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>user_visit_counts</servlet-name>
+        <url-pattern>/user_visit_counts</url-pattern>
+    </servlet-mapping>
+    
 </web-app>
